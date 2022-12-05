@@ -7,6 +7,7 @@ import android.util.Log;
 import android.widget.ListView;
 
 import com.example.retrofit_spring_interconnection_project.Models.Customer;
+import com.example.retrofit_spring_interconnection_project.Utils.Apis;
 import com.example.retrofit_spring_interconnection_project.Utils.CustomerService;
 
 import java.util.ArrayList;
@@ -26,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //listView = (ListView) findViewById(R.id.);
+        listView = findViewById(R.id.listView);
         listCustomers();
     }
 
     public void listCustomers() {
-
+        customerService = Apis.getCustomerService();
         Call<List<Customer>> call = customerService.getCustomers();
         call.enqueue(new Callback<List<Customer>>() {
             @Override
