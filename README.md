@@ -1,4 +1,5 @@
-# Spring-Retrofit-Interconne
+# Spring-Retrofit-Interconnection
+
 Spring Boot and Android Retrofit Library for RESTAPI.
 
 Android Dependecies for Retrofit:
