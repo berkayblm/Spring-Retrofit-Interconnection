@@ -1,4 +1,4 @@
-# Spring-Retrofit-Interconnection
+# Spring-Retrofit-Interconnection (Spring Boot v3.0.0)
 
 Spring Boot and Android Retrofit Library for RESTAPI.
 
